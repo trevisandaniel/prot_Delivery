@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg bg-body-tertiary">   
+            <div class="container">
+                <!--<a href="#" class="navbar-brand">Delivery<span class="span-title">IBO</span></a>-->
+                <h1 class="navbar-brand m-0">Delivery</h1>
+            <!--Button mobilde-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#linksNavbar">
+                <span class="navbar-toggler-icon"></span>
+                
+            </button>
+
+            <nav class="collapse navbar-collapse justify-content-end" id="linksNavbar">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold"><a class="nav-link" href="#"><i class="bi bi-house-door me-1"></i>Início</a></li>
+                    <!--Pedidos-->
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold" type="button" data-bs-toggle="dropdown" role="button">
+                            <i class="bi bi-box-seam-fill"></i>
+                            Pedidos
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-md-start">
+                            <li class=""><a class="dropdown-item" href="#"><i class="bi bi-minecart-loaded me-1"></i>Todos os pedidos</a></li>
+                            <li class=""><a class="dropdown-item" href="#"><i class="bi bi-cart-check-fill me-1"></i>Pedidos ativos</a></li>
+                            <li class=""><a class="dropdown-item" href="#"><i class="bi bi-cart-x-fill me-1"></i>Pedidos cancelados</a></li>
+                        </ul>
+                    </div>
+                    <li class="nav-item fw-bold"><a class="nav-link" href="#"><i class="bi bi-telephone-forward-fill me-1"></i>Contato</a></li>
+                    <!--User-->
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold" type="button" data-bs-toggle="dropdown" role="button">
+                            <i class="bi bi-person"></i>
+                            Usuário
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-md-start">
+                            <li class=""><a class="dropdown-item" href="#"><i class="bi bi-gear me-1"></i>Configurações</a></li>
+                            <li class=""><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-1"></i>Sair</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </nav>
+            </div>
+
+    </header>
+
+    <div>
+        <section id="section_carousel">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="image/burguerbatata.jpg" class="carouselImg d-block w-100" alt="hamburguer">
+                    </div>
+
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="image/pizza-g6b9f4a8c4_1920.jpg" class="carouselImg d-block w-100" alt="hamburguer">
+                    </div>
+
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="image/hamburger-ge21c40b70_1280.jpg" class="carouselImg d-block w-100" alt="hamburguer">
+                    </div>
+
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="image/bowl-g9dc54468d_1920.jpg" class="carouselImg d-block w-100" alt="hamburguer">
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                    </div>
+                </div>
+
+                <div class="container search-itens">
+                    <div class="row pt-3 pb-5">
+                        <div class="col-lg-8 col-md-12 col-sm-12 d-flex justify-content-center">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item"><a class="nav-link active" href="#">Todos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Hamburguer</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Pastel</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Pizza</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Bebidas</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Sobremesas</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 d-flex">
+                            <input class="form-control me-1" placeholder="Buscar" type="text">
+                            <button class="btnProcura">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section_produtos pt-5 pb-5">
+            <div class="container-fluid">
+                <h3 class="text-center mb-5">Produtos</h3>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 mb-2">
+                        <img src="https://via.placeholder.com/366x320" class="d-block w-100 rounded" alt="">
+                        <div class="produtoTitle">
+                            <h6 class="text-center mt-1">Nome</h6>
+                        </div>
+                        <div class="produtoDescricao">
+                            <p>descrição do produto</p>
+                        </div>
+                        <div class="produtoValor d-flex justify-content-end">
+                            <p class="valor m-0 me-5">R$ valor</p>
+                            <button class="btnValor" type="button">
+                                <i class="bi bi-dash-square-fill m-0"></i>
+                            </button>
+                            1
+                            <button class="btnValor" type="button">
+                                <i class="bi bi-plus-square-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 mb-2">
+                        <img src="https://via.placeholder.com/366x320" class="d-block w-100 rounded" alt="">
+                        <div class="produtoTitle">
+                            <h6 class="text-center mt-1">Nome</h6>
+                        </div>
+                        <div class="produtoDescricao">
+                            <p>descrição do produto</p>
+                        </div>
+                        <div class="produtoValor d-flex justify-content-end">
+                            <p class="valor m-0 me-5">R$ valor</p>
+                            <button class="btnValor" type="button">
+                                <i class="bi bi-dash-square-fill m-0"></i>
+                            </button>
+                            1
+                            <button class="btnValor" type="button">
+                                <i class="bi bi-plus-square-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 mb-2">
+                        <img src="https://via.placeholder.com/366x320" class="d-block w-100 rounded" alt="">
+                        <div class="produtoTitle">
+                            <h6 class="text-center mt-1">Nome</h6>
+                        </div>
+                        <div class="produtoDescricao">
+                            <p>descrição do produto</p>
+                        </div>
+                        <div class="produtoValor d-flex justify-content-end">
+                            <p class="valor m-0 me-5">R$ valor</p>
+                            <button class="btnValor" type="button">
+                                <i class="bi bi-dash-square-fill m-0"></i>
+                            </button>
+                            1
+                            <button class="btnValor" type="button">
+                                <i class="bi bi-plus-square-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 mb-2">
+                        <img src="https://via.placeholder.com/366x320" class="d-block w-100 rounded" alt="">
+                        <div class="produtoTitle">
+                            <h6 class="text-center mt-1">Nome</h6>
+                        </div>
+                        <div class="produtoDescricao">
+                            <p>descrição do produto</p>
+                        </div>
+                        <div class="produtoValor d-flex justify-content-end">
+                            <p class="valor m-0 me-5">R$ valor</p>
+                            <button class="btnValor" type="button">
+                                <i class="bi bi-dash-square-fill m-0"></i>
+                            </button>
+                            1
+                            <button class="btnValor" type="button">
+                                <i class="bi bi-plus-square-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--Segunda leva -->
+                    <div class="col-lg-3 col-md-4 mb-2">
+                        <img src="https://via.placeholder.com/366x320" class="d-block w-100 rounded" alt="">
+                        <div class="produtoTitle">
+                            <h6 class="text-center mt-1">Nome</h6>
+                        </div>
+                        <div class="produtoDescricao">
+                            <p>descrição do produto</p>
+                        </div>
+                        <div class="produtoValor d-flex justify-content-end">
+                            <p class="valor m-0 me-5">R$ valor</p>
+                            <button class="btnValor" type="button">
+                                <i class="bi bi-dash-square-fill m-0"></i>
+                            </button>
+                            1
+                            <button class="btnValor" type="button">
+                                <i class="bi bi-plus-square-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 mb-2">
+                        <img src="https://via.placeholder.com/366x320" class="d-block w-100 rounded" alt="">
+                        <div class="produtoTitle">
+                            <h6 class="text-center mt-1">Nome</h6>
+                        </div>
+                        <div class="produtoDescricao">
+                            <p>descrição do produto</p>
+                        </div>
+                        <div class="produtoValor d-flex justify-content-end">
+                            <p class="valor m-0 me-5">R$ valor</p>
+                            <button class="btnValor" type="button">
+                                <i class="bi bi-dash-square-fill m-0"></i>
+                            </button>
+                            1
+                            <button class="btnValor" type="button">
+                                <i class="bi bi-plus-square-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 mb-2">
+                        <img src="https://via.placeholder.com/366x320" class="d-block w-100 rounded" alt="">
+                        <div class="produtoTitle">
+                            <h6 class="text-center mt-1">Nome</h6>
+                        </div>
+                        <div class="produtoDescricao">
+                            <p>descrição do produto</p>
+                        </div>
+                        <div class="produtoValor d-flex justify-content-end">
+                            <p class="valor m-0 me-5">R$ valor</p>
+                            <button class="btnValor" type="button">
+                                <i class="bi bi-dash-square-fill m-0"></i>
+                            </button>
+                            1
+                            <button class="btnValor" type="button">
+                                <i class="bi bi-plus-square-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 mb-2">
+                        <img src="https://via.placeholder.com/366x320" class="d-block w-100 rounded" alt="">
+                        <div class="produtoTitle">
+                            <h6 class="text-center mt-1">Nome</h6>
+                        </div>
+                        <div class="produtoDescricao">
+                            <p>descrição do produto</p>
+                        </div>
+                        <div class="produtoValor d-flex justify-content-end">
+                            <p class="valor m-0 me-5">R$ valor</p>
+                            <button class="btnValor" type="button">
+                                <i class="bi bi-dash-square-fill m-0"></i>
+                            </button>
+                            1
+                            <button class="btnValor" type="button">
+                                <i class="bi bi-plus-square-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <img class="aboutPizza d-block w-100" src="image/pizza-background.jpg" alt="">
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

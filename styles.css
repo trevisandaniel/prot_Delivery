@@ -1,0 +1,86 @@
+/*.navbar{
+    background-color: #eeeaea;
+}*/
+
+/*deixar o span com detalhes*/
+.span_title {
+    background: -webkit-radial-gradient(#cac715,#333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .nav .nav-link{
+    color: #333;
+  }
+  .nav .nav-link:hover{
+    color: #fff;
+    background-color: #333;
+  }
+
+  .container .nav-pills .nav-link.active{
+  color: #fff; 
+  background-color: #333;
+}
+
+  .btnEscolha{
+    background-color: #fff;
+    color: #960909;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 1px solid #960909;
+    font-weight: bold;
+  }
+
+  .btnEscolha:hover{
+    background-color: #960909;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+
+  .btnProcura{
+    border: none;
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  .btnProcura:hover{
+    background-color: #444242;
+  }
+
+  .carouselImg{
+    height: 30em;
+    object-fit: cover;
+  }
+
+  .localRua{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #fff;
+
+  }
+  .localBairroCidade{
+    font-size: 14px;
+    margin-top: 0;
+    color: #fff;
+  }
+
+  /*produto*/
+ 
+ .btnValor{
+  margin: 0;
+  border: none;
+ }
+
+ /*about*/
+
+
+  @media screen and (max-width:675px) {
+    img{
+      height: 20em;
+      object-fit: cover;
+    }
+  }
+  
