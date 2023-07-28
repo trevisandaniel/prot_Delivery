@@ -75,12 +75,51 @@
  }
 
  /*about*/
+ @media screen and (max-width:673px){
+  #aimeudeus{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+ }
+
+ /*footer*/
+ .pizzaBackground{
+  background-image: url(/image/pizza-background.jpg);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: 100%;
+ }
+
+ .pizzaBackground h2,
+ .pizzaBackground p,
+ .pizzaBackground i{
+  color: #fff;
+ }
+
+ .icons i{
+  cursor: pointer;
+ }
+ .icons i:hover{
+  color: #5e5c5c;
+  
+ }
+
+ footer{
+  background-image: url(image/pizza-background.jpg);
+ }
+ footer p,
+ footer a{
+  color: #fff;
+ }
 
 
   @media screen and (max-width:675px) {
     img{
       height: 20em;
       object-fit: cover;
+    }
+    .produtoValor{
+      margin-bottom: 3em;
     }
   }
   
